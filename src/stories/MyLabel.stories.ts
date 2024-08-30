@@ -8,6 +8,7 @@ const meta = {
   argTypes: {
     size: { control: "select" },
     fontColor: { control: "color" },
+    backgroundColor: { control: "color" },
   },
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout
@@ -49,5 +50,15 @@ export const CustomColor: Story = {
     fontColor: "#5517ac",
     allCaps: false,
     size: "normal",
+  },
+};
+
+export const CustomBackgroundColor: Story = {
+  args: {
+    label: "Custom Background Color Label",
+    color: "text-primary",
+    allCaps: false,
+    size: "normal",
+    backgroundColor: "#ffeb3b",
   },
 };
